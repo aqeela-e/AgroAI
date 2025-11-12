@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 import pickle
 import time
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 st.set_page_config(page_title="AgroAI 🌾", layout="centered")
 
@@ -179,3 +179,4 @@ if st.button("🔍 Konsultasikan"):
             st.markdown("</ul></div>", unsafe_allow_html=True)
         else:
             st.success("✨ Kondisi tanah sudah optimal! Tidak ada saran tambahan. 🌿")
+
